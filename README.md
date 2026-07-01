@@ -193,7 +193,7 @@ A V2 representa um avanço importante na organização e arquitetura do código.
 
 # 👨‍💻 Autor
 
-Desenvolvido por **Jeff Lisboa**
+Desenvolvido por **Jefferson Lisboa**
 
 📌 Projeto focado em evolução contínua e aprendizado em desenvolvimento backend com Python.
 
