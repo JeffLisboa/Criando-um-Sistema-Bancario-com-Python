@@ -1,109 +1,147 @@
-# Criando-um-Sistema-Bancario-com-Python V1
-Desafio para criar um sistema de banco onde seja possivel realizar depósitos, saques, consultar extrato.
-# 🏦 Sistema Bancário em Python
+# 🏦 Sistema Bancário em Python — V2
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Projeto-Educacional-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Versão-V2-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Em%20Evolução-purple?style=for-the-badge">
 </p>
 
 ---
 
-## 📌 Sobre o Projeto
+# 🚀 Sobre o Projeto
 
-Este projeto consiste em um sistema bancário simples desenvolvido em Python com foco em praticar lógica de programação e fundamentos essenciais da linguagem.
+A segunda versão do sistema bancário traz uma grande evolução na estrutura do código, aplicando conceitos mais avançados da linguagem Python e melhorando significativamente a organização do projeto.
 
-O sistema permite realizar operações básicas de um banco diretamente pelo terminal, simulando funcionalidades reais como depósitos, saques e emissão de extrato.
+Além das operações bancárias básicas, agora o sistema permite:
+
+✅ Cadastro de usuários
+✅ Criação de contas bancárias
+✅ Listagem de contas
+✅ Separação do código em funções
+✅ Melhor organização e reutilização de código
+✅ Uso de parâmetros posicionais e nomeados
+✅ Estrutura mais próxima de sistemas reais
 
 ---
 
 # ✨ Funcionalidades
 
-✔️ Depósito de valores
-✔️ Saques com limite diário
-✔️ Controle de saldo
-✔️ Extrato completo das movimentações
-✔️ Limite de quantidade de saques
-✔️ Interface interativa via terminal
+## 💰 Operações Bancárias
+
+✔️ Depósito
+✔️ Saque
+✔️ Extrato
+
+---
+
+## 👤 Gestão de Usuários
+
+✔️ Cadastro de novos usuários
+✔️ Validação de CPF único
+✔️ Armazenamento de dados do cliente
+
+---
+
+## 🏦 Gestão de Contas
+
+✔️ Criação de contas bancárias
+✔️ Associação de conta ao usuário
+✔️ Listagem de contas cadastradas
 
 ---
 
 # 🧠 Conceitos Aplicados
 
-Este projeto foi desenvolvido para reforçar conhecimentos em:
+Esta versão trabalha conceitos mais avançados de programação:
 
-* Estruturas condicionais
-* Estruturas de repetição
-* Manipulação de strings
-* Variáveis e operadores
-* Validação de dados
-* Lógica de programação
-* Entrada e saída de dados
+* Funções
+* Modularização
+* Estruturas de dados
+* Listas e dicionários
+* Validação de informações
+* Parâmetros posicionais (`/`)
+* Parâmetros nomeados (`*`)
+* Reutilização de código
+* Organização de sistemas
 
 ---
 
-# 💻 Demonstração
+# 💻 Demonstração do Sistema
 
-```text id="4s8fd2"
- [1] Depositar
- [2] Sacar
- [3] Extrato
- [4] Sair
- =>
+```text id="a72kd9"
+================ MENU ================
+[d] Depositar
+[s] Sacar
+[e] Extrato
+[nc] Nova conta
+[lc] Listar contas
+[nu] Novo usuário
+[q] Sair
+=>
 ```
 
 ---
 
-# 📸 Fluxo do Sistema
+# 📸 Exemplos de Uso
 
-## 💰 Depósito
+## 👤 Cadastro de Usuário
 
-```text id="q8n2ke"
-Informe o valor de depósito: 150
-Valor R$150.00 depositado com sucesso!
+```text id="d82kq1"
+Informe o CPF (somente número): 12345678900
+Informe o nome completo: João Silva
+Informe a data de nascimento (dd-mm-aaaa): 01-01-2000
+Informe o endereço: Rua A, 123 - Centro - MG
+
+=== Usuário criado com sucesso! ===
 ```
 
 ---
 
-## 💸 Saque
+## 🏦 Criação de Conta
 
-```text id="7fd4la"
-Informe o valor de saque: 50
-Valor R$50.00 sacado com sucesso!
+```text id="w9z2pa"
+Informe o CPF do usuário: 12345678900
+
+=== Conta criada com sucesso! ===
 ```
 
 ---
 
 ## 📄 Extrato
 
-```text id="m3kz91"
-============= EXTRATO =============
+```text id="m81fla"
+================ EXTRATO ================
 
-Depósito: R$ 150.00
-Saque: R$ 50.00
+Depósito:    R$ 200.00
+Saque:       R$ 50.00
 
-Saldo: R$ 100.00
+Saldo:       R$ 150.00
 
-=============== FIM ===============
+==========================================
 ```
 
 ---
 
-# ⚙️ Regras de Negócio
+# ⚙️ Regras do Sistema
 
-| Regra                       | Descrição                |
-| --------------------------- | ------------------------ |
-| Limite de saque             | R$ 500,00                |
-| Quantidade máxima de saques | 3 saques                 |
-| Depósitos                   | Apenas valores positivos |
-| Saques                      | Apenas se houver saldo   |
+| Regra            | Descrição                |
+| ---------------- | ------------------------ |
+| Limite de saque  | R$ 500,00                |
+| Máximo de saques | 3 saques                 |
+| CPF              | Não pode duplicar        |
+| Conta bancária   | Vinculada a um usuário   |
+| Depósitos        | Apenas valores positivos |
 
 ---
 
-# 🚀 Tecnologias Utilizadas
+# 📂 Estrutura do Projeto
 
-* Python
+```text id="z81sdf"
+v2/
+│
+├── sistema_bancario_v2.py
+└── README.md
+```
 
 ---
 
@@ -111,57 +149,56 @@ Saldo: R$ 100.00
 
 ## Clone o repositório
 
-```bash id="92jfa2"
-git clone https://github.com/seu-usuario/seu-repositorio.git
+```bash id="g73la2"
+git clone https://github.com/JeffLisboa/Criando-um-Sistema-Bancario-com-Python.git
 ```
 
 ---
 
 ## Acesse a pasta
 
-```bash id="ks8d21"
-cd nome-do-projeto
+```bash id="u8sld1"
+cd Criando-um-Sistema-Bancario-com-Python
 ```
 
 ---
 
 ## Execute o projeto
 
-```bash id="8dja11"
-python app.py
+```bash id="j29dla"
+python sistema_bancario_v2.py
 ```
 
 ---
 
-# 📈 Possíveis Melhorias Futuras
+# 📈 Evolução da V1 para V2
 
-🔹 Sistema de login
-🔹 Múltiplos usuários
-🔹 Banco de dados
-🔹 Interface gráfica
-🔹 API bancária
-🔹 Programação Orientada a Objetos (POO)
-🔹 Histórico persistente de transações
+| V1                         | V2                             |
+| -------------------------- | ------------------------------ |
+| Código procedural simples  | Código modularizado            |
+| Apenas operações bancárias | Usuários e contas              |
+| Sem reutilização de código | Uso de funções                 |
+| Estrutura básica           | Estrutura organizada           |
+| Menor escalabilidade       | Mais próximo de sistemas reais |
 
 ---
 
 # 🎯 Objetivo do Projeto
 
-Este projeto foi criado com fins educacionais para desenvolver habilidades em programação com Python e fortalecer a lógica computacional.
+Este projeto foi desenvolvido para aprofundar conhecimentos em Python e demonstrar evolução prática no desenvolvimento de sistemas.
+
+A V2 representa um avanço importante na organização e arquitetura do código.
 
 ---
 
 # 👨‍💻 Autor
 
-Desenvolvido por **Jefferson Lisboa**
+Desenvolvido por **Jeff Lisboa**
 
-📌 Projeto focado em aprendizado e evolução na programação.
+📌 Projeto focado em evolução contínua e aprendizado em desenvolvimento backend com Python.
 
 ---
 
 # ⭐ Contribuição
 
-Sinta-se à vontade para contribuir com melhorias, sugestões ou novas funcionalidades.
-
-Se gostou do projeto, deixe uma ⭐ no repositório!
-
+Sinta-se à vontade para abrir issues, sugerir melhorias ou contribuir com novas funcionalidades.
